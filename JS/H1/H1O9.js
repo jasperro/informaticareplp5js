@@ -1,20 +1,20 @@
-var letterGrootte = 30;
+var letterGrootte = 40;
 var marge = 20;
 
 function setup() {
   var myCanvas = createCanvas(1000,300);
   myCanvas.parent('processing');
-  textFont("Verdana");
+  textFont("Roboto");
   textSize(letterGrootte);
-  textLeading(1.2*letterGrootte);
+  textLeading(1.5*letterGrootte);
   //noLoop();
 }
 
 function draw() {
   background('orange');
   fill('yellow');
-  textAlign(LEFT, TOP);
-  text("mouseX:" + mouseX + "\nmouseY:" + mouseY,mouseX,mouseY);
+  textAlign(LEFT, BOTTOM);
+  text("mouseX:" + round(mouseX) + " mouseY:" + round(mouseY),mouseX,mouseY);
   translate(50,50);
   fill('black');
   text("vensterGrootte:\n" + windowWidth + " x " + windowHeight,0,0);

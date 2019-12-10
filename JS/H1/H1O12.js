@@ -9,6 +9,8 @@ function setup() {
 }
 
 function draw() {
+  xJOS = mouseX;
+  yJOS = mouseY;
   background('lavender');
   fill('black');
   text("mouseX:" + round(mouseX) + " mouseY:" + round(mouseY),10,20);
@@ -34,6 +36,8 @@ function draw() {
   fill('white');
   arc(0, 40, 80, 40, 0, PI, CHORD);
   pop();
+  /*xJOS--;
+  yJOS-=2;*/
   // einde tekenen JOS
   
 }
